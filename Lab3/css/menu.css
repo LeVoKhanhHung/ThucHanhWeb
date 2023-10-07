@@ -1,0 +1,51 @@
+* {
+    font-family: Tahoma Arial sans-serif;
+}
+
+div.container {
+    height: 40px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8B0000;
+}
+    div.menu {
+        margin-left: 5px;
+        margin-bottom: 2px;
+        background-color: #EEEEEE;
+        display: flex;
+        flex-direction: row;
+    }
+        div.menu-item {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+        }
+        div.menu-item:hover {
+            background-color: #8B0000;
+            color: white;
+            cursor: pointer;
+            & div.submenu {
+                display: block;
+            }
+        }
+            div.submenu {
+                position: absolute;
+                display: none;
+                width: 150px;
+                margin-left: -10px;
+                margin-top: 10px;
+                background-color: #EEEEEE;
+                border-top: 2px solid #8B0000;
+                color: black;
+            }
+                div.submenu-item {
+                    text-align: left;
+                    padding: 10px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid black;
+                }
+                div.submenu-item:hover {
+                    background-color: #8B0000;
+                    color: white;
+                }
